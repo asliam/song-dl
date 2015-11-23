@@ -1,6 +1,5 @@
 #! /usr/bin/env node
 
-var Promise = require("bluebird");
 var cli = require('cli');
 var BestVideo = require('youtube-best-video');
 var ytdl = require('ytdl-core');
