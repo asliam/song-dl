@@ -20,6 +20,9 @@ var downloadSong = function(query, outputFile, key, cb) {
         .save(outputFile)
         .on('end', function() {
           cb && cb(null);
+        })
+        .on('error', function(err) {
+          cb && cb(err);
         });
     } catch(e) {
       cb && cb(e);
@@ -53,7 +56,11 @@ if (require.main === module) {
       process.exit();
     }
 
-    downloadSong(query, options.output, options.key);
+    downloadSong(query, options.output, options.key, function(err) {
+      if(err) {
+        console.log(err);
+      }
+    });
   });
 } else {
   // expose functions if this file has been
