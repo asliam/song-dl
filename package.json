@@ -1,6 +1,6 @@
 {
   "name": "song-dl",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Command line utility to download a song",
   "main": "index.js",
   "bin": {
