@@ -14,12 +14,16 @@ var downloadSong = function(query, outputFile, key, cb) {
       return;
     }
 
-    var stream = ytdl(link);
-    ffmpeg(stream)
-      .save(outputFile)
-      .on('end', function() {
-        cb && cb(null);
-      });
+    try {
+      var stream = ytdl(link);
+      ffmpeg(stream)
+        .save(outputFile)
+        .on('end', function() {
+          cb && cb(null);
+        });
+    } catch(e) {
+      cb && cb(e);
+    }
   });
 }
 
