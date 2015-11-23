@@ -9,6 +9,7 @@ download the best matching song from youtube
 ```
 $ npm intall -g song-dl
 $ sdl "song name and artist" -o outputfile.mp3 -k <YOUTUBE API KEY>
+$ open outputfile.mp3
 ```
 
 ### node
