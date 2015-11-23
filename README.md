@@ -1,6 +1,7 @@
 # song-dl
 download the best matching song from youtube
 
+NOTE - requires `ffmpeg` (on osx install with `brew install ffmpeg`)
 
 ## usage
 
