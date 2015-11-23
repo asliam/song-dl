@@ -1,0 +1,32 @@
+{
+  "name": "song-dl",
+  "version": "1.0.0",
+  "description": "Command line utility to download a song",
+  "main": "index.js",
+  "bin": {
+    "sdl": "index.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "songs",
+    "song",
+    "dl",
+    "download",
+    "youtube"
+  ],
+  "author": "Matthew Conlen",
+  "license": "ISC",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "cli": "^0.11.1",
+    "fluent-ffmpeg": "^2.0.1",
+    "youtube-best-video": "mathisonian/youtube-best-video",
+    "ytdl-core": "^0.7.6"
+  }
+}
